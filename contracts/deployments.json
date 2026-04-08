@@ -1,0 +1,9 @@
+{
+  "network": "etherlink-ghostnet",
+  "chainId": 128123,
+  "deployedAt": "2026-04-08T04:38:53.393Z",
+  "deployer": "0xb49A440dE113BFC359912128Bf14e2E3ddF87834",
+  "contracts": {
+    "AfterchainRegistry": "0xB60ED709EB213764D3Fda0504553ee5B85F48227"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "app",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2026-01-11",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": true
+    }
+  },
+  "upload_source_maps": true,
+ "assets": {
+  "directory": "./dist/client/client",
+  "binding": "ASSETS",
+  "not_found_handling": "single-page-application"
+},
+  "vars": {
+    "VITE_ETHERLINK_RPC": "https://node.shadownet.etherlink.com",
+    "AZURE_OPENAI_KEY": "AhLMfg0dwsTeJwZdd3wKD9dsIkWaTu9HkRvBqsVMgGrrMz4m2yMbJQQJ99CCACfhMk5XJ3w3AAAAACOGZihC",
+    "AZURE_OPENAI_ENDPOINT": "https://steph-mn21fe7r-swedencentral.cognitiveservices.azure.com/",
+    "AZURE_OPENAI_DEPLOYMENT": "vitara-gpt4o"
+  },
+  "env": {
+    "etherlink": {
+      "vars": {
+        "VITE_ETHERLINK_RPC": "https://node.shadownet.etherlink.com"
+      }
+    }
+  }
+}
